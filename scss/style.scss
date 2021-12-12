@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.title {
+    font-family: 'Old Standard TT', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 44px;
+    color: rgba(105, 90, 89, 1);
+}
+
+.logo-text,
+.info-list-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-list-items:last-child {
+    margin-right: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.start {
+    background: #343235;
+    height: 520px;
+    z-index: -2;
+
+    &-title {
+        font-size: 46px;
+        color: white;
+        line-height: 60px;
+    }
+
+    &-row {
+        padding: 80px 100px 80px 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-text {
+        color: rgb(211, 201, 195);
+        margin: 40px 0px 60px 0px;
+    }
+
+    &-link {
+        color: rgba(167, 133, 135, 1);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 12px;
+        border-bottom: 1px solid rgba(167, 133, 135, 1);
+        border-top: 1px solid rgba(167, 133, 135, 1);
+        padding: 20px;
+        transition: 0.3s;
+
+        &:hover {
+            color: white;
+            border: 1px solid white;
+            background: rgba(0, 0, 0, 0.200);
+        }
+    }
+
+    &-image {
+        grid-row: 1/4;
+        grid-column: 2/3;
+    }
+}

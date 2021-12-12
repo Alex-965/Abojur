@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
@@ -26,13 +26,17 @@ li {
 
 .logo {
   font-size: 44px;
-  color: rgba(105, 90, 89, 1);
+  color: #695a59;
 }
 
 .logo-text,
 .info-list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 
@@ -41,16 +45,16 @@ li {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 25px 0px;
-}
-
-.start-title {
-  font-size: 46px;
-  color: white;
-  line-height: 60px;
 }
 
 .start {
@@ -59,35 +63,51 @@ nav {
   z-index: -2;
 }
 
+.start-title {
+  font-size: 46px;
+  color: white;
+  line-height: 60px;
+}
+
 .start-row {
   padding: 80px 100px 80px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .start-text {
-  color: rgb(211, 201, 195);
+  color: #d3c9c3;
   margin: 40px 0px 60px 0px;
 }
 
 .start-link {
-  color: rgba(167, 133, 135, 1);
+  color: #a78587;
   text-decoration: none;
   font-weight: 700;
   font-size: 12px;
-  border-bottom: 1px solid rgba(167, 133, 135, 1);
-  border-top: 1px solid rgba(167, 133, 135, 1);
+  border-bottom: 1px solid #a78587;
+  border-top: 1px solid #a78587;
   padding: 20px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .start-link:hover {
   color: white;
   border: 1px solid white;
-  background: rgba(0, 0, 0, 0.200);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .start-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
   grid-row: 1/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
+/*# sourceMappingURL=style.css.map */
