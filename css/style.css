@@ -245,7 +245,6 @@ nav {
   padding: 40px;
   gap: 20px;
   background: white;
-  outline: 1px solid black;
 }
 
 .production-list-items .production-list-item-text h3 {
@@ -265,6 +264,14 @@ nav {
 
 .production-list-items .production-list-item-text p:nth-child(4) {
   color: #9a8584;
+  position: relative;
+}
+
+.production-list-items .production-list-item-text p:nth-child(4)::before {
+  content: url(/img/image-26);
+  position: absolute;
+  padding-left: 90px;
+  padding-top: 3px;
 }
 
 .production-list-items .production-list-block {
@@ -337,13 +344,26 @@ nav {
 }
 
 .photos-list-items .photos-list-item:nth-child(1), .photos-list-items .photos-list-item:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #343235;
-  width: 72px;
-  height: 72px;
+  width: 92px;
+  height: 92px;
   border-radius: 100px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.photos-list-items .photos-list-item:nth-child(3) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .photos-list-items .photos-list-item:nth-child(2) {
@@ -380,6 +400,17 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.photos-list-items .photos-list-item-block p:nth-child(2) {
+  margin-right: 100px;
+}
+
+.photos-list-items .photos-list-item-block p:nth-child(2)::before {
+  content: url(/img/image-27);
+  position: absolute;
+  padding-left: 120px;
+  margin-top: 2px;
 }
 
 .team {
@@ -609,6 +640,22 @@ input:nth-child(4) {
   background: none;
   padding: 20px 15px;
   border: 1px solid #a78587;
+}
+
+.inputs input:nth-child(3) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 80px;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.inputs label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 20px;
 }
 
 .mission {
