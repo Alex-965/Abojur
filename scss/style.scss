@@ -78,6 +78,7 @@ nav {
         padding: 80px 100px 80px 100px;
         display: flex;
         justify-content: space-between;
+
     }
 
     &-text {
@@ -222,13 +223,6 @@ nav {
             & p:nth-child(4) {
                 color: rgba(154, 133, 132, 1);
                 position: relative;
-
-                &::before{
-                    content: url(/img/image-26);
-                    position: absolute;
-                    padding-left: 90px;
-                    padding-top: 3px;
-                }
             }
         }
 
